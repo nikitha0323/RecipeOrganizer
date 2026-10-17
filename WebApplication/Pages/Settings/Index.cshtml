@@ -1,0 +1,27 @@
+﻿@page
+
+@{
+    ViewData["Title"] = "Settings";
+}
+
+<h1>Settings</h1>
+
+<p>Choose the theme you want to use.</p>
+
+<button id="lightTheme" class="btn btn-outline-primary">Light Theme</button>
+<button id="darkTheme" class="btn btn-dark">Dark Theme</button>
+
+<script>
+    function setTheme(theme) {
+        document.body.setAttribute("data-theme", theme);
+        localStorage.setItem("recipeTheme", theme);
+    }
+
+    document.getElementById("lightTheme").addEventListener("click", function () {
+        setTheme("light");
+    });
+
+    document.getElementById("darkTheme").addEventListener("click", function () {
+        setTheme("dark");
+    });
+</script>

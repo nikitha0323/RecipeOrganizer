@@ -1,0 +1,51 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+    body[data-theme="dark"] {
+        background-color: #212529;
+        color: #f8f9fa;
+    }
+
+        body[data-theme="dark"] .navbar,
+        body[data-theme="dark"] footer,
+        body[data-theme="dark"] .table,
+        body[data-theme="dark"] .form-control,
+        body[data-theme="dark"] .form-select {
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+
+        body[data-theme="dark"] .text-dark,
+        body[data-theme="dark"] .nav-link {
+            color: #f8f9fa !important;
+        }
+
+        body[data-theme="dark"] .table {
+            --bs-table-color: #f8f9fa;
+            --bs-table-bg: #343a40;
+            --bs-table-border-color: #6c757d;
+        }
+
+        body[data-theme="dark"] a {
+            color: #8ec5ff;
+        }
